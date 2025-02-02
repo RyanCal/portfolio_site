@@ -3,8 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ryan Calvert - Senior Data & Pricing Analyst with expertise in SQL, Python, and process optimization.">
+    <meta name="keywords" content="Data Analyst, Pricing Analyst, SQL, Python, Process Optimization">
+    <meta name="author" content="Ryan Calvert">
     <title>Ryan Calvert - Portfolio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        /* Sticky Navbar */
+        header {
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #ff3b2f;
+        }
+
+        /* Project Visuals */
+        .project-visual {
+            margin-top: 20px;
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #ff3b2f;
+        }
+
+        /* Footer Social Links */
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #ff6f61;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,10 +116,11 @@
 
     <section class="hero" id="home">
         <div class="container">
-            <h1>Welcome</h1>
-            <p class="subtitle">Senior Data & Pricing Analyst</p>
+            <h1>Ryan Calvert</h1>
+            <h1>Senior Pricing & Data Analyst</h1>
             <div class="hero-content">
-                <p>Data-driven Analyst experienced in price modeling, demand forecasting, and process optimization. Proficient in SQL, Microsoft Office, and Google Suite for delivering actionable insights.</p>
+                <p>Data-driven Analyst experienced in price modeling, demand forecasting, and process optimization. Proficient in SQL, Python, Microsoft Office, and Google Suite for delivering actionable insights.</p>
+                <a href="#resume" class="cta-button">View My Work</a>
             </div>
         </div>
     </section>
@@ -36,60 +132,95 @@
                 <div class="main-content">
                     <div class="experience-card">
                         <h3>Senior Pricing Analyst</h3>
+                        <div class="tools-used">
+                            <span class="tool-tag">SQL</span>
+                            <span class="tool-tag">Python</span>
+                            <span class="tool-tag">Excel</span>
+                            <span class="tool-tag">Jira</span>
+                            <span class="tool-tag">Dynamic Pricing</span>
+                            <span class="tool-tag">Price Elasticity Modeling</span>
+                            <span class="tool-tag">Stakeholder Management</span>
+                        </div>
                         <div class="experience-meta">
-                            <span class="company">Natana, E-commerce</span>
+                            <span class="company">Natsana, E-commerce</span>
                             <span class="location">Germany</span>
-                            <span class="duration">July 2024 - December 2024</span>
+                            <span class="duration">July 2024 - January 2025</span>
                         </div>
                         <ul class="achievements">
-                            <li>Developed and implemented dynamic pricing models across 500+ product portfolio</li>
-                            <li>Executed continuous A/B price testing across multiple markets</li>
-                            <li>Established comprehensive pricing guidelines for strategic alignment</li>
-                            <li>Conducted in-depth analyses of competitor positioning and demand elasticity</li>
+                            <li>Developed and implemented dynamic pricing models across 500+ product portfolio, <strong>resulting in a 7% increase in monthly revenue</strong>.</li>
+                            <li>Executed continuous A/B price testing across multiple markets, <strong>optimizing price points and improving customer retention by 10%</strong>.</li>
+                            <li>Established comprehensive pricing guidelines for strategic alignment, <strong>reducing pricing inconsistencies by 15%</strong>.</li>
+                            <li>Conducted in-depth analyses of competitor positioning and demand elasticity, <strong>leading to a 5% improvement in market share</strong>.</li>
                         </ul>
                     </div>
 
                     <div class="experience-card">
                         <h3>Process Analyst</h3>
+                        <div class="tools-used">
+                            <span class="tool-tag">PowerPoint</span>
+                            <span class="tool-tag">Excel</span>
+                            <span class="tool-tag">Agile Framework</span>
+                            <span class="tool-tag">BPM Tools</span>
+                            <span class="tool-tag">Stakeholder Management</span>
+                        </div>
                         <div class="experience-meta">
                             <span class="company">HDI Global, Insurance</span>
                             <span class="location">Germany</span>
                             <span class="duration">March 2024 - June 2024</span>
                         </div>
                         <ul class="achievements">
-                            <li>Collaborated with stakeholders to enhance complex business processes</li>
-                            <li>Developed standardized documentation for international workflows</li>
+                            <li>Collaborated with stakeholders to enhance complex business processes, <strong>reducing process bottlenecks by 20%</strong>.</li>
+                            <li>Developed standardized documentation for international workflows, <strong>improving cross-border operational efficiency by 25%</strong>.</li>
                         </ul>
                     </div>
 
                     <div class="experience-card">
                         <h3>Supply Chain Analyst</h3>
+                        <div class="tools-used">
+                            <span class="tool-tag">SQL</span>
+                            <span class="tool-tag">Python</span>
+                            <span class="tool-tag">Excel</span>
+                            <span class="tool-tag">Demand Forecasting</span>
+                            <span class="tool-tag">Google Looker</span>
+                            <span class="tool-tag">Dashboard Creation</span>
+                            <span class="tool-tag">Automated SQL Job</span>
+                        </div>
                         <div class="experience-meta">
                             <span class="company">AutoAnything, E-commerce</span>
                             <span class="location">USA</span>
-                            <span class="duration">May 2020 - September 2023</span>
+                            <span class="duration">May 2020 - Sep 2023</span>
                         </div>
                         <ul class="achievements">
-                            <li>Led demand forecasting efforts resulting in 15% reduction in excess inventory</li>
-                            <li>Created customized supply chain dashboards using SQL and Google Suite</li>
-                            <li>Presented insights to stakeholders using Google Looker</li>
+                            <li>Led demand forecasting efforts, <strong>resulting in a 18% reduction in excess inventory</strong>.</li>
+                            <li>Created customized supply chain dashboards using SQL and Google Suite, <strong>improving decision-making efficiency by 30%</strong>.</li>
+                            <li>Presented insights to stakeholders using Google Looker, <strong>reducing reporting time by 20%</strong>.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="sidebar">
                     <div class="info-card">
-                        <h3>Technical Skills</h3>
+                        <h3>Technical Expertise</h3>
                         <div class="skills-grid">
+                            <span class="skill-tag">Microsoft Office</span>
                             <span class="skill-tag">Google Suite</span>
-                            <span class="skill-tag">Data Studio</span>
-                            <span class="skill-tag">Big Query</span>
                             <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Excel</span>
                             <span class="skill-tag">Python</span>
                             <span class="skill-tag">Financial Modeling</span>
                             <span class="skill-tag">Forecasting</span>
-                            <span class="skill-tag">Excel</span>
                             <span class="skill-tag">PowerPoint</span>
+                            <span class="skill-tag">BPM</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Soft Skills</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Excellent communication</span>
+                            <span class="skill-tag">Stakeholder management</span>
+                            <span class="skill-tag">Critical thinking</span>
+                            <span class="skill-tag">Self-motivated</span>
                         </div>
                     </div>
 
@@ -100,6 +231,9 @@
                             <p>Bachelor in Business Administration</p>
                             <p>Major in Finance</p>
                             <p class="edu-duration">Aug. 2017 - Aug. 2019</p>
+                            <h4>Czech University of Life Sciences</h4>
+                            <p>Semester Abroad</p>
+                            <p class="edu-duration">Aug. 2018 - Jan. 2019</p>
                         </div>
                     </div>
 
@@ -115,11 +249,164 @@
         </div>
     </section>
 
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="project-grid">
-                <!-- Projects will be added here -->
+                        <section class="projects" id="projects">
+                            <div class="container">
+                                <h2 class="section-title">Featured Projects</h2>
+                                <div class="project-grid">
+                                    <div class="project-card">
+                                        <div class="project-header">
+                                            <h3>Dynamic Pricing & Elasticity Analysis Tool</h3>
+                                            <div class="project-tags">
+                                                <span class="tech-tag">Excel</span>
+                                                <span class="tech-tag">Data Modeling</span>
+                                                <span class="tech-tag">Price Elasticity</span>
+                                                <span class="tech-tag">Dashboard Design</span>
+                                            </div>
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="project-description">
+                                                <p>A sophisticated Excel tool built to analyze daily sales performance across 500+ products, 3 brands and 6 sales channels. Key features:</p>
+                                                <ul class="project-highlights">
+                                                    <li><strong>Data Aggregation</strong>: Automated ingestion of daily sales data with Power Query.</li>
+                                                    <li><strong>Insight Generation</strong>: Dashboards tracking revenue, margin, sell-through and conversion rates.</li>
+                                                    <li><strong>Elasticity Engine</strong>: Compare two time periods to isolate pricing/marketing impacts using regression analysis.</li>
+                                                    <li><strong>Scenario Modeling</strong>: "What-if" simulations for price changes and promotions.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="detail-section">
+                                                <h4>Business Impact</h4>
+                                                <ul>
+                                                    <li>Reduced pricing analysis time by 40% through automation</li>
+                                                    <li>Identified 7% revenue uplift opportunities via elasticity insights</li>
+                                                    <li>Enabled faster decision-making and price consistency with centralized dashboards</li>
+                                                </ul>
+                                            </div>
+                                            <div class="detail-section">
+                                                <h4>Technical Implementation</h4>
+                                                <ul>
+                                                    <li>Processed ~250,000 rows of daily sales data using Excel Power Query</li>
+                                                    <li>Automated reporting with VBA macros and dynamic PivotTables</li>
+                                                    <li>Built elasticity models using Excel’s Analysis ToolPak for regression analysis</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <div class="project-header">
+                                            <h3>Dynamic Lead Time Calculator</h3>
+                                            <div class="project-tags">
+                                                <span class="tech-tag">SQL</span>
+                                                <span class="tech-tag">Data Analysis</span>
+                                                <span class="tech-tag">E-commerce</span>
+                                                <span class="tech-tag">Process Automation</span>
+                                            </div>
+                                        </div>
+                                        <div class="project-content">
+                        <div class="project-description">
+                            <p>Developed a sophisticated SQL-based system to automatically calculate and update product shipping estimates across an entire e-commerce platform. This solution utilized and provided:</p>
+                            <ul class="project-highlights">
+                                <li><strong>Data Gathering</strong>: Processes historical shipping data to generate accurate delivery estimates</li>
+                                <li><strong>Implementation Logic</strong>: Handles multiple vendor types (OEM, Wholesale Distributors, 3PL)</li>
+                                <li><strong>Business Logic</strong>: Incorporates business rules for special cases and made-to-order items</li>
+                                <li><strong>Automatic Updates</strong>: Improves customer experience by providing accurate shipping expectations</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>Business Impact</h4>
+                                <ul>
+                                    <li>Enabled automatic updated for shipping time estimates</li>
+                                    <li>Increased accuracy of estimation</li>
+                                    <li>Enabled easy monitoring through report generation</li>
+                                </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4>Technical Implementation</h4>
+                            <ul>
+                                <li>Processed 100,000 items hourly, calculating best source and estimating lead time</li>
+                                <li>Adding addition business logic for edge cases and overrides</li>
+                                <li>Simple reporting output showcasing changes made for ease of auditing</li>
+                            </ul>
+                        </div>
+
+                        <!-- Collapsible Code Section -->
+                        <div class="code-section">
+                            <div class="code-header">
+                                <h4>SQL Code Implementation</h4>
+                                <button class="code-toggle" onclick="toggleCode('leadTimeCode')">View Code</button>
+                            </div>
+                            <div id="leadTimeCode" class="code-content">
+                                <pre><code class="language-sql">
+                    -- Configuration parameters
+                    DECLARE @Majority_Threshold VARCHAR(12) = '60';           -- % that must be ordered from OEM/WD
+                    DECLARE @Difference_Threshold INT = 2;                    -- Days difference between OEM and WD
+                    DECLARE @SalesHistoryDays INT = 45;                      -- How far back to pull sales data
+                    DECLARE @OOSDaysAdd INT = 15;                            -- Additional days for out-of-stock estimates
+                    DECLARE @DaysSplit INT = 0;                              -- Split between min and max days
+                    DECLARE @BusDayConversion FLOAT = 0.714;                 -- Converting calendar days to business days
+                    DECLARE @Minimum_Orders AS VARCHAR(12) =
+                        ROUND((@SalesHistoryDays / 1), 0);                   -- Minimum orders threshold
+                    DECLARE @ModifyDateRestriction INT = 30;                 -- Days until variant lead time update
+                    DECLARE @ABBS INT = 1034;                                -- ABBS identifier
+
+                    WITH BaseOrderData AS (
+                        -- Base order information with calculated business days
+                        SELECT DISTINCT
+                            o.ordr_id,
+                            oi.variant_id,
+                            p.vendor_id AS OEM_Number,
+                            v.modified_date,
+                            v.modified_bs_user_id,
+                            v.display_status_id,
+                            oi.vendor_id,
+                            oi.fulfillment_vendor_id,
+                            isup.supplier_id AS FirstSort,
+                            po.purchase_ordr_date,
+                            os.create_date,
+                            -- Business days calculation
+                            DATEDIFF(DAY, po.purchase_ordr_date, os.create_date)
+                            - (DATEDIFF(WK, po.purchase_ordr_date, os.create_date) * 2)
+                            - CASE WHEN DATEPART(dw, po.purchase_ordr_date) = 1 THEN 1 ELSE 0 END
+                            + CASE WHEN DATEPART(dw, os.create_date) = 1 THEN 1 ELSE 0 END AS D2SH,
+                            -- Inventory settings
+                            item.in_stock_min_days_until_shipment,
+                            item.in_stock_max_days_until_shipment,
+                            item.out_of_stock_min_days_until_shipment,
+                            item.out_of_stock_max_days_until_shipment,
+                            CASE WHEN item.inventory_behavior_type_id = 'ESD' THEN 1 ELSE 0 END AS Out_of_Stock_Behavior
+                        FROM [P4].[dbo].[ordr] o
+                        JOIN [P4].[dbo].[ordr_item] oi
+                            ON o.ordr_id = oi.ordr_id
+                            AND oi.ordr_item_status_id NOT IN ('CNCL','AWAIT','APPR')
+                        JOIN [backoffice_ordr_fulfillment_db].[dbo].[item_supplier] AS item
+                            ON item.item_id = oi.variant_id
+                            AND oi.fulfillment_vendor_id = item.supplier_id
+                        LEFT JOIN [backoffice_ordr_fulfillment_db].[dbo].[item_supplier] AS isup
+                            ON isup.item_id = oi.variant_id
+                            AND isup.sort_priority = '1'
+                        JOIN [P4].[dbo].[variant] v
+                            ON oi.variant_id = v.variant_id
+                        JOIN [P4].[dbo].[product] p
+                            ON v.product_id = p.product_id
+                        JOIN dbo.ordr_shipment_item osi
+                            ON o.ordr_id = osi.ordr_id
+                            AND osi.variant_id = oi.variant_id
+                        JOIN [P4].[dbo].[ordr_shipment] os
+                            ON osi.ordr_shipment_id = os.ordr_shipment_id
+                        LEFT JOIN [P4].[dbo].[purchase_ordr_item] poi
+                            ON poi.ordr_item_id = oi.ordr_item_id
+                            AND poi.purchase_ordr_item_status_id = 'COMPL'
+                        LEFT JOIN [P4].[dbo].[purchase_ordr] po
+                            ON po.purchase_ordr_id = poi.purchase_ordr_id
+                            AND po.purchase_ordr_status_id = 'COMPL'
+                        WHERE o.sale_date > DATEADD(DAY, -@SalesHistoryDays, GETDATE())
+                            AND o.sale_date < GETDATE()
+                            AND o.ordr_type_id = 'ordr'
+                    )
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -133,12 +420,8 @@
                     <a href="mailto:ryanjc7@gmail.com">ryanjc7@gmail.com</a>
                 </div>
                 <div class="contact-item">
-                    <span class="contact-label">Phone</span>
-                    <a href="tel:+4915165116686">+49 151 65116686</a>
-                </div>
-                <div class="contact-item">
                     <span class="contact-label">Location</span>
-                    <p>Pfarrkamp 4, 38126 Braunschweig</p>
+                    <p>Braunschweig, Germany</p>
                 </div>
             </div>
         </div>
@@ -146,205 +429,22 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Ryan Calvert. All rights reserved.</p>
+            <p>&copy; 2025 Ryan Calvert. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ryan-calvert-171451159/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/RyanCal" target="_blank">GitHub</a>
+            </div>
         </div>
     </footer>
+
+    <script>
+        function toggleCode(id) {
+            const codeBlock = document.getElementById(id);
+            const isHidden = codeBlock.style.display === 'none';
+            codeBlock.style.display = isHidden ? 'block' : 'none';
+            const button = codeBlock.previousElementSibling.querySelector('.code-toggle');
+            button.textContent = isHidden ? 'Hide Code' : 'View Code';
+        }
+    </script>
 </body>
 </html>
-<div class="project-card">
-    <div class="project-header">
-        <h3>Dynamic Lead Time Calculator</h3>
-        <div class="project-tags">
-            <span class="tech-tag">SQL</span>
-            <span class="tech-tag">Data Analysis</span>
-            <span class="tech-tag">E-commerce</span>
-            <span class="tech-tag">Process Automation</span>
-        </div>
-    </div>
-    <div class="project-content">
-        <div class="project-description">
-            <p>Developed a sophisticated SQL-based system to automatically calculate and update product shipping estimates across an entire e-commerce platform. This solution:</p>
-            <ul class="project-highlights">
-                <li>Processes historical shipping data to generate accurate delivery estimates</li>
-                <li>Handles multiple vendor types (OEM, Wholesale Distributors, 3PL)</li>
-                <li>Incorporates business rules for special cases and made-to-order items</li>
-                <li>Improves customer experience by providing accurate shipping expectations</li>
-            </ul>
-        </div>
-        <div class="code-section">
-            <div class="code-header">
-                <h4>Key Implementation Snippet</h4>
-                <button class="code-toggle" onclick="toggleCode('leadTimeCode')">View Code</button>
-            </div>
-            <div id="leadTimeCode" class="code-content">
-                <pre><code class="language-sql">WITH BaseOrderData AS (
-    SELECT DISTINCT
-        o.ordr_id,
-        oi.variant_id,
-        p.vendor_id AS OEM_Number,
-        oi.vendor_id,
-        oi.fulfillment_vendor_id,
-        -- Business days calculation
-        DATEDIFF(DAY, po.purchase_ordr_date, os.create_date)
-        - (DATEDIFF(WK, po.purchase_ordr_date, os.create_date) * 2)
-        - CASE WHEN DATEPART(dw, po.purchase_ordr_date) = 1 THEN 1 ELSE 0 END
-        + CASE WHEN DATEPART(dw, os.create_date) = 1 THEN 1 ELSE 0 END AS D2SH
-    FROM [P4].[dbo].[ordr] o
-    JOIN [P4].[dbo].[ordr_item] oi ON o.ordr_id = oi.ordr_id
-    -- Additional joins omitted for brevity
-    WHERE o.sale_date > DATEADD(DAY, -@SalesHistoryDays, GETDATE())
-),
-
-ShippingMetrics AS (
-    SELECT
-        variant_id,
-        COUNT(*) AS ordrs_per_variant,
-        SUM(CASE WHEN vendor_id = fulfillment_vendor_id THEN 1 ELSE 0 END) AS OrdrOEM,
-        AVG(CASE WHEN vendor_id = fulfillment_vendor_id THEN D2SH END) AS Avg_D2SH_OEM,
-        AVG(CASE WHEN vendor_id != fulfillment_vendor_id THEN D2SH END) AS Avg_D2SH_WD
-    FROM BaseOrderData
-    GROUP BY variant_id
-)</code></pre>
-            </div>
-        </div>
-        <div class="project-details">
-            <div class="detail-section">
-                <h4>Technical Highlights</h4>
-                <ul>
-                    <li>Implemented Common Table Expressions (CTEs) for modular and maintainable code</li>
-                    <li>Created configurable parameters for easy business rule updates</li>
-                    <li>Developed complex business logic handling various shipping scenarios</li>
-                    <li>Integrated multiple data sources across different databases</li>
-                </ul>
-            </div>
-            <div class="detail-section">
-                <h4>Key Features</h4>
-                <ul>
-                    <li>Dynamic calculation of business days between order and shipment</li>
-                    <li>Automated handling of special cases and exceptions</li>
-                    <li>Separate handling for in-stock vs out-of-stock scenarios</li>
-                    <li>Vendor performance-based lead time adjustments</li>
-                </ul>
-            </div>
-            <div class="detail-section">
-                <h4>Impact</h4>
-                <ul>
-                    <li>Improved shipping estimate accuracy</li>
-                    <li>Reduced customer service inquiries about shipping times</li>
-                    <li>Enhanced inventory management efficiency</li>
-                    <li>Streamlined operational processes</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-function toggleCode(id) {
-    const codeBlock = document.getElementById(id);
-    const isHidden = codeBlock.style.display === 'none';
-    codeBlock.style.display = isHidden ? 'block' : 'none';
-    const button = codeBlock.previousElementSibling.querySelector('.code-toggle');
-    button.textContent = isHidden ? 'Hide Code' : 'View Code';
-}
-</script>
-<div class="project-card">
-    <div class="project-header">
-        <h3>Fulfillment Priority Optimization System</h3>
-        <div class="project-tags">
-            <span class="tech-tag">SQL</span>
-            <span class="tech-tag">Supply Chain</span>
-            <span class="tech-tag">Automation</span>
-            <span class="tech-tag">Process Optimization</span>
-        </div>
-    </div>
-    <div class="project-content">
-        <div class="project-description">
-            <p>Built an automated SQL system to optimize vendor selection across multiple fulfillment channels, factoring in costs, margins, and business rules. This solution:</p>
-            <ul class="project-highlights">
-                <li>Processes over 100,000 SKUs daily to determine optimal fulfillment paths</li>
-                <li>Incorporates real-time inventory data from multiple suppliers</li>
-                <li>Handles complex business logic including vendor-specific rules and promotions</li>
-                <li>Optimizes for both cost and delivery speed</li>
-            </ul>
-        </div>
-        <div class="code-section">
-            <div class="code-header">
-                <h4>Core Logic Implementation</h4>
-                <button class="code-toggle" onclick="toggleCode('fulfillmentCode')">View Code</button>
-            </div>
-            <div id="fulfillmentCode" class="code-content">
-                <pre><code class="language-sql">WITH BaseOrderData AS (
-    SELECT DISTINCT
-        variant_id,
-        fulfillment_vendor_id,
-        CASE
-            WHEN unit_cost = 99999.99 THEN
-                (ROW_NUMBER() OVER (PARTITION BY variant_id
-                    ORDER BY unit_cost DESC, fulfillment_vendor_id)) + 79
-            ELSE
-                ROW_NUMBER() OVER (PARTITION BY variant_id
-                    ORDER BY unit_cost, fulfillment_vendor_id)
-        END AS new_sortpriority,
-        CASE
-            WHEN sortpriority <> CASE
-                WHEN unit_cost = 99999.99 THEN
-                    (ROW_NUMBER() OVER (PARTITION BY variant_id
-                        ORDER BY unit_cost DESC, fulfillment_vendor_id)) + 79
-                ELSE
-                    ROW_NUMBER() OVER (PARTITION BY variant_id
-                        ORDER BY unit_cost, fulfillment_vendor_id)
-            END THEN 1
-            ELSE 0
-        END AS change
-    FROM vendor_fulfillment_data
-    WHERE display_status_id NOT IN ('del','zaa','z')
-),
-
-/* Key business logic handling vendor priorities */
-SELECT
-    variant_id,
-    fulfillment_vendor_id,
-    new_sortpriority AS sortpriority,
-    change
-FROM BaseOrderData
-WHERE change > 0
-    AND CASE
-        WHEN vendor_type = 'OEM' AND margin >= threshold THEN 1
-        WHEN inventory_available > 0 AND lead_time <= max_lead_time THEN 1
-        ELSE 0
-    END = 1
-ORDER BY variant_id, sortpriority</code></pre>
-            </div>
-        </div>
-        <div class="project-details">
-            <div class="detail-section">
-                <h4>Technical Features</h4>
-                <ul>
-                    <li>Dynamic vendor prioritization based on multiple factors</li>
-                    <li>Real-time margin calculations and threshold checks</li>
-                    <li>Automated handling of vendor-specific promotions and rules</li>
-                    <li>Integration with inventory management systems</li>
-                </ul>
-            </div>
-            <div class="detail-section">
-                <h4>Business Impact</h4>
-                <ul>
-                    <li>15% reduction in fulfillment costs</li>
-                    <li>10% improvement in delivery speed</li>
-                    <li>Automated vendor selection for 100,000+ daily orders</li>
-                    <li>Reduced manual intervention in order processing</li>
-                </ul>
-            </div>
-            <div class="detail-section">
-                <h4>Key Algorithms</h4>
-                <ul>
-                    <li>Dynamic pricing adjustments based on shipping costs</li>
-                    <li>Vendor rating system incorporating historical performance</li>
-                    <li>Lead time optimization for multi-vendor orders</li>
-                    <li>Margin threshold calculations with business rules</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
