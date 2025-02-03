@@ -8,6 +8,7 @@
     <meta name="author" content="Ryan Calvert">
     <title>Ryan Calvert - Portfolio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* Sticky Navbar */
         header {
@@ -107,6 +108,7 @@
             <h2>Ryan Calvert</h2>
             <ul>
                 <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</><li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -118,13 +120,47 @@
         <div class="container">
             <h1>Ryan Calvert</h1>
             <h1>Senior Pricing & Data Analyst</h1>
-            <div class="hero-content">
-                <p>Data-driven Analyst experienced in price modeling, demand forecasting, and process optimization. Proficient in SQL, Python, Microsoft Office, and Google Suite for delivering actionable insights.</p>
-                <a href="#resume" class="cta-button">View My Work</a>
-            </div>
+                <div class="hero-content">
+                    <p>Data-driven Analyst experienced in price modeling, demand forecasting, and process optimization. Proficient in SQL, Python, Microsoft Office, and Google Suite for delivering actionable insights.</p>
+                    <div class="cta-buttons">
+                        <a href="#about" class="cta-button">About Me</a>
+                        <a href="#resume" class="cta-button">Resume</a>
+                        <a href="#projects" class="cta-button">View My Work</a>
+                    </div>
+                </div>
         </div>
     </section>
+<section class="about-section" id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hi, I'm Ryan – a data-driven analyst with a passion for turning complex challenges into actionable solutions. I've built this website from scratch as a testament to my continuous learning mindset and technical abilities. Here, you'll find a showcase of my professional journey, key projects, and the skills I've honed across pricing optimization, process improvement, and data analysis.</p>
 
+                <p>When I'm not diving into datasets or building dynamic pricing models, you'll find me exploring the great outdoors, experimenting with machine learning algorithms, or improving my German language skills. I thrive at the intersection of analytical rigor and creative problem-solving, always seeking innovative ways to drive business value.</p>
+
+                <p>Originally from California, I now call Braunschweig, Germany, home – a move inspired by my wife, whom I met during her exchange program at San Diego State University. This international experience has shaped my ability to navigate cross-cultural collaborations and global business dynamics. I'm open to opportunities in both Germany and the USA and do not require sponsorship.</p>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Ryan Calvert" class="profile-photo">
+                <div class="personal-facts">
+                    <div class="fact">
+                        <span class="fact-icon">📍</span>
+                        <span>Based in Braunschweig, Germany</span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-icon">🌍</span>
+                        <span>Right to work in USA & Germany</span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-icon">📊</span>
+                        <span>Analyzed 500+ products</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <section class="resume-section" id="resume">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
@@ -147,8 +183,8 @@
                             <span class="duration">July 2024 - January 2025</span>
                         </div>
                         <ul class="achievements">
-                            <li>Developed and implemented dynamic pricing models across 500+ product portfolio, <strong>resulting in a 7% increase in monthly revenue</strong>.</li>
-                            <li>Executed continuous A/B price testing across multiple markets, <strong>optimizing price points and improving customer retention by 10%</strong>.</li>
+                            <li>Developed and implemented dynamic pricing models across a 500+ product portfolio, <strong>resulting in a 7% increase in monthly revenue</strong>.</li>
+                            <li>Executed continuous price testing across multiple markets, <strong>optimizing price points and improving customer retention by 10%</strong>.</li>
                             <li>Established comprehensive pricing guidelines for strategic alignment, <strong>reducing pricing inconsistencies by 15%</strong>.</li>
                             <li>Conducted in-depth analyses of competitor positioning and demand elasticity, <strong>leading to a 5% improvement in market share</strong>.</li>
                         </ul>
@@ -169,8 +205,8 @@
                             <span class="duration">March 2024 - June 2024</span>
                         </div>
                         <ul class="achievements">
-                            <li>Collaborated with stakeholders to enhance complex business processes, <strong>reducing process bottlenecks by 20%</strong>.</li>
-                            <li>Developed standardized documentation for international workflows, <strong>improving cross-border operational efficiency by 25%</strong>.</li>
+                            <li>Collaborated with stakeholders to enhance complex business processes, <strong>reducing process bottlenecks by 10%</strong>.</li>
+                            <li>Developed standardized documentation for international workflows, <strong>improving cross-border operational efficiency by 15%</strong>.</li>
                         </ul>
                     </div>
 
