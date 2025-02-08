@@ -600,12 +600,11 @@ footer {
 
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
-    body {
-        background: #121212;
-        color: #e0e0e0;
-    }
-
-    .experience-card {
-        background: #1e1e1e;
+    :root {
+        --body-bg-color: #121212;
+        --body-text-color: #e0e0e0;
+        --card-bg-color: #1e1e1e;
+        --link-color: #5dacff;
+        --link-hover-color: #acd4ff;
     }
 }
